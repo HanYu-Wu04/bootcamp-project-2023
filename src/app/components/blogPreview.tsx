@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image'; // Import Image from Next.js for optimized image loading
 import styles from './blogPreview.module.css';
+import Link from 'next/link';
 
 type Blog = {
   title: string;
@@ -20,6 +21,8 @@ interface BlogPreviewProps {
 
 const BlogPreview: React.FC<BlogPreviewProps> = ({ blog }) => {
   return (
+    <div>
+    <a href={`/blog/${blog.slug}`}>
     <div className={`${styles.container} ${styles.card}`}>
       <div className={styles.card__header}>
         {/* Use Next.js Image for optimized image loading */}
@@ -44,6 +47,8 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({ blog }) => {
           </div>
         </div>
       </div>
+    </div>
+    </a>
     </div>
   );
 };

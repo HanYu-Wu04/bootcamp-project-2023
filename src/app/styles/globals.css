@@ -218,3 +218,8 @@ form {
   width: 500px;
   margin: 0 auto;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

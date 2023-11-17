@@ -15,7 +15,7 @@
   
     background-color: var(--cg-black);
     color: var(--cg-white);
-    padding: -10px 0px;
+    padding: -15px 0px;
   
     /* Debug border */
     /* border: solid red; */
@@ -54,7 +54,8 @@
   .logo{
     font-family: Georgia;
     margin-left: 16px;
-    font-size: 25px;
+    font-size: 22px;
+    letter-spacing: 5px;
   }
   
   .logo:hover {
