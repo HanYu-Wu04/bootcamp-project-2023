@@ -36,6 +36,15 @@ body {
   justify-content: center;
   font-size: 40px;
   font-family: Georgia;
+  
+}
+
+.blog-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Georgia;
+  margin-bottom: -40px;
 }
 
 /* CSS for portfolio grid */
@@ -208,103 +217,4 @@ textarea {
 form {
   width: 500px;
   margin: 0 auto;
-}
-
-
-
-/* CSS for blog page */
-
-.blog-page .container {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-max-width: 1200px;
-margin-block: 2rem;
-gap: 2rem;
-}
-
-.blog-page .card {
-display: flex;
-flex-direction: column;
-width: clamp(20rem, calc(20rem + 2vw), 22rem);
-overflow: hidden;
-box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-border-radius: 1em;
-background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-}
-
-.blog-page .card__body {
-padding: 1rem;
-display: flex;
-flex-direction: column;
-gap: .5rem;
-}
-
-.blog-page .tag {
-align-self: flex-start;
-padding: .25em .75em;
-border-radius: 1em;
-font-size: .75rem;
-}
-
-.blog-page .tag + .tag {
-margin-left: .5em;
-}
-
-.blog-page .tag-blue {
-background: #56CCF2;
-background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-color: #fafafa;
-}
-
-.blog-page .tag-brown {
-background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
-color: #fafafa;
-}
-
-.blog-page .tag-red {
-background: #cb2d3e;
-background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-color: #fafafa;
-}
-
-.blog-page .card__body h4 {
-font-size: 1.0rem;
-display: flex;
-flex-direction: column;
-gap: 0.25rem;
-text-transform: capitalize;
-}
-
-.blog-page .card__footer {
-display: flex;
-padding: 1rem;
-margin-top: auto;
-}
-
-.blog-page .user__image {
-width: 40px; /* Set your desired width */
-height: 40px; /* Set your desired height */
-border-radius: 50%;
-}
-
-.blog-page .user__info > small {
-color: #666;
-}
-
-.blog-page .card__header .card__image {
-max-width: 100%;
-max-height: 200px; /* Set a maximum height for the images */
-object-fit: cover;
-}
-
-.card {
-/* existing styles for your card */
-transition: transform 0.3s ease; /* Add transition for smooth effect */
-}
-
-.card:hover {
-transform: scale(1.05); /* Scale the card slightly on hover */
 }
