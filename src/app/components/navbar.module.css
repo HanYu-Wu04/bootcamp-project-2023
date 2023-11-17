@@ -51,11 +51,12 @@
     color: var(--cg-blue);
   }
   
-  .logo a {
+  .logo{
     font-family: Georgia;
+    margin-left: 20px;
   }
   
-  .logo a:hover {
+  .logo:hover {
     text-decoration: None;
   }
   
