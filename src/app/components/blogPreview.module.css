@@ -1,0 +1,130 @@
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .tag {
+    align-self: flex-start;
+    padding: .25em 1.00em;
+    border-radius: 1em;
+    font-size: .75rem;
+
+  }
+  
+  .tag + .tag {
+    margin-left: .5em;
+  }
+  
+  .tagBlue {
+    background: #56CCF2;
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+  }
+  
+  .tag-brown {
+    background: #D1913C;
+    background: linear-gradient(to bottom, #FFD194, #D1913C);
+    color: #fafafa;
+  }
+  
+  .tag-red {
+    background: #cb2d3e;
+    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+  }
+  
+  .card__body h4 {
+    font-size: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.05rem;
+    text-transform: capitalize;
+  }
+  
+  .card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  .user__image {
+    width: 40px; /* Set your desired width */
+    height: 40px; /* Set your desired height */
+    border-radius: 50%;
+  }
+  
+  .user__info > small {
+    color: #666;
+  }
+  
+  .card__header .card__image {
+    max-width: 100%;
+    max-height: 200px; /* Set a maximum height for the images */
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale the card slightly on hover */
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+.date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Style the blog image */
+.blog-image {
+    margin-bottom: 10px;
+}
+
+.blog-image img {
+    max-width: 100%;
+}
+
+/* Style the blog content */
+.content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -20px;
+    font-size: 14px;
+    font-family: monospace;
+    margin-bottom: -40px;
+}
+
+.blog-content a:hover {
+    color: #555;
+}
