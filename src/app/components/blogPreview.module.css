@@ -44,13 +44,13 @@
     color: #fafafa;
   }
   
-  .tag-brown {
+  .tagBrown {
     background: #D1913C;
     background: linear-gradient(to bottom, #FFD194, #D1913C);
     color: #fafafa;
   }
   
-  .tag-red {
+  .tagRed {
     background: #cb2d3e;
     background: linear-gradient(to bottom, #ef473a, #cb2d3e);
     color: #fafafa;
