@@ -6,7 +6,7 @@ export default function Resume() {
     <div>
       <Navbar/>
       <main>
-        <h1 className="page-title">Han's Resume</h1>
+        <h1 className="page-title">Han&apos;s</h1>
         <a href='/Han_s_Resume.pdf'>Download Resume</a>
         <div className="resume">
             <section className="section">
